@@ -1,2 +1,2 @@
-# Ideias para o porjeto?
+# Ideias para o projeto?
 # nome?
