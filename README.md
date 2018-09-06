@@ -1,3 +1,2 @@
-# Aula04
-#Sou seu fã
-#eu sou lindo
+# Ideias para o porjeto
+# nome?
