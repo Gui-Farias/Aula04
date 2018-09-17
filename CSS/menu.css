@@ -1,0 +1,86 @@
+*{margin: 0;padding: 0px; }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* ##################### AQUI FICA AS COISAS DO HEADER (DIV) ############# */
+
+header{
+    background-color: rgb(54, 104, 145);
+    display: table;
+    float: right;
+    width: 100%;
+    
+
+}
+
+/* FIM HEADER*/
+
+/* AQUI SÃO AS CONFIGURAÇÕES DA LOGO*/
+
+.logo{
+
+    width: 60px;
+    margin: 0px 0px -5px 8px;
+    
+
+}
+
+
+/* ########### CONFIGURAÇÕES DO MENU ###### */
+
+.menu{
+
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    float: right;
+}
+
+
+.menu li{
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+}
+
+/* ######### AQUI FICA AS COISAS REFERENTES AO CONJUNTOS DE QUADRADOS DO MENU #### */
+
+.menu li a{
+    background:dimgrey;
+    color: white; 
+    text-decoration: none; 
+    padding: 17px 17px; 
+    display: block;
+}
+
+/* ##### AQUI FICA A COR DO EFEITO DE QUANDO PASSA O MAUSE POR CIMA */
+
+.menu li a:hover{
+    
+    background: #DC143C;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/* ###### AQUI FICA AS CONFIGURAÇÕES DA LISTA DE OPÇÕES ( A QUE ABRE) ##### */
+
+.menu li ul{
+
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
