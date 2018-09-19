@@ -1,0 +1,52 @@
+.slide img{
+    width: 100%;
+    
+}
+* { 
+    margin:0; 
+    padding:0;
+    } 
+     
+.slide { 
+    width: 640px; 
+    overflow: hidden; 
+    height: 428px; 
+    margin: 50px auto; 
+    box-shadow: 0 0 8px #000; 
+    position: relative; 
+    } 
+     
+.slide img { 
+    position: absolute; 
+    z-index: 1; display: 
+    none; left: 0; 
+    } 
+     
+.slide p { 
+    z-index:2; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    font-family: Arial; 
+    font-size: 18px; 
+    background: rgba(0,0,0,0.5); 
+    color: #fff; 
+    }
+
+.Margem{
+    margin: 40%
+}
+
+.Camp{
+    font-size: 150%
+}
+
+.Premio{
+    font-size: 150%
+}
+
+.Hackaton{
+    font-size: 150%
+}
