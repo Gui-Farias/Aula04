@@ -1,6 +1,8 @@
-*{margin: 0;padding: 0px; }
-
-
+*{margin: 0;padding: 0px;color:red;}
+html{
+	background-image: url("back.jpg");
+	z-index:-1;
+}
 body{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -13,7 +15,7 @@ body{
 /* ##################### AQUI FICA AS COISAS DO HEADER  ############# */
 
 header{
-
+    z-index:10;
     top: 0px;
     background-color: rgb(54, 104, 145);
     display: block;
@@ -21,13 +23,13 @@ header{
     width: 100%;
     position: fixed
 }
+
 /* #################### FIM HEADER ##################*/
 
 
 /* #################### Conteudo do footer ############ */
 
 footer{
-
     float: left;
     background-color: #0D1719;
     border-top: 5px solid #333;
@@ -111,4 +113,8 @@ footer p{
     width: 150px;
 }
 
-
+.tituloempresa{
+	font-size: 40px;
+	margin: 0 0 0 6.3%;
+	position: absolute;
+}
