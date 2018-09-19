@@ -2,18 +2,13 @@
 
 
 body{
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    
-    
+
 }
 
-/* ############ TAG main é aonde todo o conteudo principal deve ser centralizado ############### */
 
-main{
-    margin-top: 100px;
-    margin-bottom: 20px;
-}
 
 /* ##################### AQUI FICA AS COISAS DO HEADER  ############# */
 
@@ -33,7 +28,8 @@ header{
 
 footer{
 
-    background-color: #696961;
+    float: left;
+    background-color: #0D1719;
     border-top: 5px solid #333;
     bottom: 0;
     left: 0;
