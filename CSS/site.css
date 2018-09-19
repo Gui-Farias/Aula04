@@ -30,7 +30,7 @@ header{
 /* #################### Conteudo do footer ############ */
 
 footer{
-
+    float: left;
     background-color: #0D1719;
     border-top: 5px solid #333;
     bottom: 0;
