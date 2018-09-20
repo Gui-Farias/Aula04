@@ -1,0 +1,197 @@
+/* ############ TAG main é aonde todo o conteudo principal deve ser centralizado ############### */
+
+main{
+    margin-top: 54px;
+    width: 100%;
+    
+}
+
+body{
+    background-color: #696961;
+}
+
+p{
+    color:black;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} 
+
+.centralizaTexto{
+    text-align: center;
+}
+
+
+
+
+/* PRIMEIRA DIV A ESQUERDA*/
+
+.conteudoADS{
+
+    width: 46%;
+    background-color:#a4a7c8a8;
+    margin: 26px 0px 0px 0px;
+    min-height: 1px;
+    padding: 20px;
+    float: right;
+
+}
+
+.conteudoADM{
+
+    width: 46%;
+    background-color:#a4a7c8a8;
+    margin: 26px 0px 0px 0px;
+    min-height: 1px;
+    padding: 20px;
+    float: right;
+
+}
+
+.conteudoSI{
+
+    width: 46%;
+    background-color:#a4a7c8a8;
+    margin: 26px 0px 0px 0px;
+    min-height: 1px;
+    padding: 20px;
+    float: right;
+
+
+
+}
+
+/* SEGUNDA DIV EMBAIXO */
+
+.InformacoesFerramentas{
+
+    width: 38%;
+    background-color:#a4a7c8a8;
+    margin: 0px 20px 15px 0px;
+    min-height: 1px;
+    padding: 20px;
+    float: left;
+
+}
+
+
+.linha{
+    content: '';
+    width: 90px;
+    height: 3px;
+    display: block;
+    background-color: rgb(95, 95, 240);
+    margin-bottom: 20px;
+}
+
+.linhaCentralizada{
+
+    
+    content: '';
+    width: 200px;
+    height: 8px;
+    background-color: rgb(95, 95, 240);
+    margin-bottom: 20px;
+    margin-left: 275px;
+
+}
+
+
+/*DIVS DE MATRIZ DE CURRICULAR (ULTIMA DIV)*/
+
+.conteudoMatrizCurricularADS{
+
+    width: 97%;
+    background-color:#a4a7c8a8;
+    margin: 26px 0px 0px 0px;
+    min-height: 1px;
+    padding: 20px;
+    float: left;   
+ 
+
+}
+
+/* Configurações do botão de redirecionamento da matriz curricular */
+
+.botaoMatriz{
+
+    width: 300px;
+    padding: 15px 20px;
+    border:  1px solid #eee;
+    border-radius: 6px;
+    background-color: #696961;
+    margin-left: 500px;
+}
+
+.botaoMatriz  button:hover{
+
+    background: #DC143C;
+    color:#DC143C;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/* CONFIGURAÇÕES DAS FONTOES DENTRO DAS DIVS*/
+
+.sobreCursoADS{
+    
+    font-size: 110%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.sobreCursoADMIN{
+    
+    font-size: 110%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+/*CONFIGURAÇÕES DE IMAGEM DE BANNER*/
+
+.imgBanner{
+
+    width: 1348px;
+    height: 260px;
+}
+
+
+/* IMAGENS DEPOIS DO BANNER (ESQUERDA)*/
+
+#ImagemDestaqueConteudoADS{
+
+    width: 41%;
+    height: 313px;
+    margin: 26px 10px 10px 0px;
+}
+
+#ImagemDestaqueConteudoADM{
+
+    width: 41%;
+    height: 375px;
+    margin: 26px 10px 10px 0px;
+}
+
+#ImagemDestaqueConteudoSI{
+
+    width: 41%;
+    height: 355px;
+    margin: 26px 10px 10px 0px;
+}
+
+#imagenConjutosDeLinguagem{
+
+    width: 49%;
+    height: 392px;
+    float: right;
+
+}
+
+#ImagemDestaqueConteudoBaixoADM{
+    width: 49%;
+    height: 322px;
+    float: right;
+
+}

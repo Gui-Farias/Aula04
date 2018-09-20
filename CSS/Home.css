@@ -1,0 +1,89 @@
+﻿/* ############ TAG main é aonde todo o conteudo principal deve ser centralizado ############### */
+
+main{
+	margin-top: 54px;
+	width: 100%;
+	text-align: center;
+
+}
+
+#noti{
+	display: block;
+	margin:10% 0 10% 13.9%;
+	height: 400px;
+	width: 73%;
+}
+
+#noti h2{
+	position: absolute;
+	text-align:center;
+	color: red;
+	text-decoration: none;
+	z-index: 1;
+	font-size: 1.8em;
+	width: 30%;
+}
+#noti .noti1 h2{
+	margin:28% 0 0 0;
+	width: 38.6%; !important
+}
+#noti .noti2 h2{
+	margin:12% 0 0 42%;
+
+}
+#noti .noti3 h2{
+	margin:27.4% 0 0 42%;
+}
+
+
+#noti .noti1 img{
+	width: 53%;
+	height: auto;
+	float: left;
+	position: relative;
+	border-radius: 8px;
+	border: 3px solid #FFF;
+	cursor: pointer;
+}
+
+#noti .noti2 img, #noti .noti3 img{
+	width: 43%;
+	height: 82%;
+	float: right;
+	position: relative;
+	border-radius: 8px;
+	border: 3px solid #FFF;
+	cursor: pointer;
+}
+#noti .noti1 img:hover,#noti .noti2 img:hover,#noti .noti3 img:hover {box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);}
+
+
+
+#introYoung{
+	padding-bottom: 20px;
+	width: 56%;
+	margin-left: 22.5%;
+}
+
+#introYoung .logonome{
+	width: 54%;
+	padding-left: 1%;
+}
+
+#video{
+	padding: 100px 0 100px 0;
+	font-size: 16px;
+	margin-top: 6%;
+}
+#video video{
+	margin: 5% 0 6% 0;
+}
+
+#parcerias{
+	display: block;
+	margin-top: 6%;	
+}
+
+#parcerias h1{margin-bottom: 2%;}
+
+#parcerias img{margin-right:2.8%; width:19%;}

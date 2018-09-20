@@ -1,0 +1,62 @@
+/* ############ TAG main é aonde todo o conteudo principal deve ser centralizado ############### */
+
+main{
+    margin-top: 54px;
+    width: 100%;
+    
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+h2{
+    text-align: center;
+    color: white
+}
+
+p{
+    text-align: center;
+    color:white
+}
+
+button{
+    float: right;
+    margin-right: 30px;
+    
+}
+
+.conteudo{
+
+    width: 45%;
+    background-color:#a4a7c8a8;
+    margin: 25px;
+    min-height: 1px;
+    padding: 20px;
+    float: right;
+
+}
+
+.linha{
+    content: '';
+    width: 90px;
+    height: 3px;
+    display: block;
+    background-color: rgb(95, 95, 240);
+    margin-bottom: 20px;
+}
+
+.sobreCursoP{
+    
+    font-size: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
+
+button{
+    color: black;
+}
