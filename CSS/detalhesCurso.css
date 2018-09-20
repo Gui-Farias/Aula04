@@ -10,6 +10,10 @@ body{
     background-color: #696961;
 }
 
+p{
+    color:black;
+}
+
 h1{
     text-transform: uppercase;
     letter-spacing: 2px;
