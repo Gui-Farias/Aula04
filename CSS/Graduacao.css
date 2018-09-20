@@ -6,10 +6,6 @@ main{
     
 }
 
-body{
-    background-color: #696961;
-}
-
 h1{
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -19,12 +15,12 @@ h1{
 
 h2{
     text-align: center;
-    color: firebrick
+    color: white
 }
 
 p{
     text-align: center;
-    color:firebrick
+    color:white
 }
 
 button{
@@ -59,44 +55,4 @@ button{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 
-}
-
-.adm{
-    background-image:url("../imagens/Cursos/adm.png");
-    Width:100%;
-    height:200px ;
-}
-
-.ads{
-    background-image: url("../imagens/Cursos/ads2.jpg");
-    width: 100%;
-    height:200px ;
-}
-
-.bd{
-    background-image: url("../imagens/Cursos/bd.png");
-    width: 100%;
-    height:200px ;
-}
-
-.jd{
-    background-image: url("../imagens/Cursos/jd.jpg");
-    width: 100%;
-    height:200px ;
-}
-
-.si{
-    background-image: url("../imagens/Cursos/si.jpg");
-    width: 100%;
-    height:200px ;
-}
-
-.corbranca{
-    text-align: center;
-    color: white;
-}
-
-.corver{
-    text-align: center;
-    color: red;
 }
