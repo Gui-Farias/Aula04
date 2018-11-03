@@ -4,6 +4,39 @@
     margin-right: 6%;
 }
 
+.cardPDF{
+
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border-radius: 10px;
+    
+    background:
+    linear-gradient(rgba(247, 251, 255, 0.73),
+      rgba(108, 91, 123, 0.8),
+      rgba(192, 108, 123, 0.8)
+      );       
+    background-size: cover;
+    z-index: 0;   
+}
+
+.cardAulas{
+
+    height: 100%;
+    width: 206%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border: 0;
+    background: #fff;
+    background-size: cover;
+    z-index: 0;
+
+}
+
+h1{
+    font-weight: 500 !important;
+    padding: 10px;
+    margin-bottom: 4%;
+}
 .comunicado {
     margin: 17px;
     padding-bottom: 45px;
