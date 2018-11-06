@@ -1,0 +1,208 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>YoungUniversity</title>
+    <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'CSS/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'CSS/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'DashBoardCSS/area_professorCSS/OuvidoriaProfessor.css' %}" rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="#">
+                    <strong class="blue-text">Young University</strong>
+                </a>
+
+                <!-- Botão Sair -->
+                <a class="btn ml-2 btn-warning" href="../../">Sair</a></li>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+
+            <a class="logo-wrapper waves-effect ">
+                <img src="{% static 'Imagens/logo/LogoYoung.png' %}" class="img-fluid" alt="Young">
+            </a>
+
+            <div class="list-group list-group-flush">
+                <a href="../" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
+                <a href="../calendario_prof" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-table mr-3"></i>Calendario geral</a>
+                <a href="../planejamento_aula" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fab fa-audible icone"></i>Plenejamento de aula</a>
+                <a href="../ouvidoria_prof" class="list-group-item active waves-effect">
+                    <i class="fas fa-assistive-listening-systems icone"></i>Ouvidoria</a>
+                <a href="../corrigir_atividade_prof" class="list-group-item list-group-item-action waves-effect">
+                    <i class="far fa-check-square icone"></i>Corrigir atividades</a>
+                <a href="../conta_prof" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user mr-3"></i>Conta</a>
+
+
+            </div>
+
+        </div>
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+                <!--Card content-->
+                <div class="card-body d-sm-flex justify-content-between">
+
+                    <h4 class="mb-2 mb-sm-0 pt-1">
+                        Bem vindo a Ouvidoria, deixe ideias, sugestões e críticas, será muito importante.
+                    </h4>
+
+
+                </div>
+
+            </div>
+            <!-- Heading -->
+
+
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-4">
+
+                    <!--Card-->
+                    <div class="cardPDF">
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <h1>Descreva sua dúvida</h1>
+                            <div class="Alinhamento">
+                                <h4>Categorias:</h4>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        Selecione uma categoria
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">&nbsp;&nbsp; Infraestrutura Predial &nbsp;&nbsp;</a></li>
+                                        <li><a href="#">&nbsp;&nbsp; Infraestrutura Tecnológica &nbsp;&nbsp;</a></li>
+                                        <li><a href="#">&nbsp;&nbsp; Coordenação &nbsp;&nbsp;</a></li>
+                                        <li><a href="#">&nbsp;&nbsp; Atividade Continuas &nbsp;&nbsp;</a></li>
+                                        
+                                    </ul>
+                                </div> <br> <br> <br> <br><br>
+                                <!-- Fim categoria -->
+                                
+                                <!--
+                                <h4>Subcategorias:</h4>
+                                Single button 
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        Selecione uma categoria
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" >
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+
+                                </div>
+                                Fim Subcategoria
+                                <br><br><br>
+
+                                -->
+                                
+                                <h3>Mensagem</h3>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Descreva a sua duvida"
+                                            rows="9" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-light" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                            <!-- Fim div Ouvidoria-->
+                        </div>
+                    </div>
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+        </div>
+
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+        <!--Copyright-->
+        <div class="card-body text-center">
+            <h4 class="text-white">
+                <p>&copy; Copyright Young Developer 2018 </p>
+            </h4>
+            <p class="h5 text-white"> for Ecommerce, marketplace, booking websites
+                and product landing pages</p> <br>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %} "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Initializations -->
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>YoungUniversity</title>
+    <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'CSS/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'CSS/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'DashBoardCSS/area_professorCSS/calendarioProfessor.css' %}" rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="#">
+                    <strong class="blue-text">Young University</strong>
+                </a>
+
+                <!-- Botão Sair -->
+                <a class="btn ml-2 btn-warning" href="../../">Sair</a></li>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+
+            <a class="logo-wrapper waves-effect">
+                <img src="{% static 'Imagens/logo/LogoYoung.png' %}" class="img-fluid" alt="Young">
+            </a>
+
+            <div class="list-group list-group-flush">
+                <a href="../" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
+                <a href="../calendario_prof" class="list-group-item active waves-effect">
+                    <i class="fa fa-table mr-3"></i>Calendario geral</a>
+                <a href="../planejamento_aula" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fab fa-audible icone"></i>Plenejamento de aula</a>
+                <a href="../ouvidoria_prof" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-assistive-listening-systems icone"></i>Ouvidoria</a> 
+                <a href="../corrigir_atividade_prof" class="list-group-item list-group-item-action waves-effect">
+                    <i class="far fa-check-square icone"></i>Corrigir atividades</a>
+                <a href="../conta_prof" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user mr-3"></i>Conta</a>
+                    
+                    
+            </div>
+
+        </div>
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+                <!--Card content-->
+                <div class="card-body d-sm-flex justify-content-between">
+
+                    <h4 class="mb-2 mb-sm-0 pt-1">
+                        Confira seu Calendario professor(a) <'Nome do professor'> da sala 2ºF - Noturno
+
+                    </h4>
+
+                   
+
+                    </form>
+
+                </div>
+
+            </div>
+            <!-- Heading -->
+            
+             <!--Grid row-->
+             <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-4">
+
+                    <!--Card-->
+                    <div class="cardPDF">
+                        
+                        <!--Card content-->
+                        <div class="card-body">
+                            <h1>&nbsp; Calendario Graduação 2° Semestre 2018</h1>
+
+                            <!-- Aqui aonde fica o PDF do plano de ensino-->
+                            <iframe src="../../../static/docs/Calendario-Graduacao-2018_2.pdf" width="100%" height="800px;"  style="zoom:120%; border: none;"></iframe>
+                            <!-- Fim PDF-->
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+             </div>
+
+            
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="cardAulas">
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <h1>Mês de Novembro</h1>
+                            <!-- Table  -->
+                            <table class="table table-hover">
+                                <!-- Table head -->
+                                <thead class="blue lighten-4">
+                                    <tr>
+                                        <th>Domingo</th>
+                                        <th>Segunda</th>
+                                        <th>Terça</th>
+                                        <th>Quarta</th>
+                                        <th>Quinta</th>
+                                        <th>Sexta</th>
+                                        <th>Sábado</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table head -->
+
+                                <!-- Table body -->
+                                <tbody>
+                                    <tr>
+
+                                        <td class="grey lighten-4">28</td>
+                                        <td class="grey lighten-4">29</td>
+                                        <td class="grey lighten-4">30</td>
+                                        <td>31</td>
+                                        <td>1</td>
+                                        <td class="red lighten-4">2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>  
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td class="yellow lighten-2">7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td class="yellow lighten-2">14</td>
+                                        <td class="red lighten-4">15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td class="red lighten-4">20</td>
+                                        <td class="yellow lighten-2">21</td>
+                                        <td class="red lighten-4">22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td class="yellow lighten-2">28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td class="grey lighten-4">1</td>
+                                    </tr>
+                                </tbody>
+                                <!-- Table body -->
+                            </table>
+                            <!-- Table  -->
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header">Gestão das Atividades 2F - Noturno</div>
+                        <p class="comunicado">
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC1
+                                <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                             </a>
+                             
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC2
+                                    <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                                 </a>
+                                 
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC3
+                                    <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                                 </a>
+                                 
+                            <a class="list-group-item green lighten-3 list-group-item-action waves-effect">AC4
+                                    <span class="badge badge-primary badge-pill pull-right">Corrigida</span>
+                                 </a>                                 
+                            <a class="list-group-item red lighten-3 list-group-item-action waves-effect">AC5
+                                    <span class="badge badge-primary badge-pill pull-right">Data : 12/11</span>
+                                 </a>
+
+                        </p>
+
+
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!-- Card header -->
+
+                        <div class="card-header">Legenda</div>
+
+                        <!-- Lista Da legenda-->
+                        <div class="list-group list-group-flush">
+                                <a class="list-group-item yellow lighten-2 list-group-item-action waves-effect">AC
+                                    <span class="badge badge-primary badge-pill pull-right">Dias 7/14/21/28</span>
+                                </a>
+                                <a class="list-group-item red lighten-4 list-group-item-action waves-effect">Feriados
+                                    <span class="badge badge-primary badge-pill pull-right">Dias 2/15/20/22</span>
+                                </a>
+                                <br><br>
+                        </div>
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header">Comunicado!</div>
+                        <p class="comunicado">Corrigir todas as atividades até a proxima semana.</p>
+
+                        
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+        <!--Copyright-->
+        <div class="card-body text-center">
+            <h4 class="text-white"><p>&copy; Copyright Young Developer 2018 </p> </h4>
+            <p class="h5 text-white"> for Ecommerce, marketplace, booking websites 
+            and product landing pages</p>   <br>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %} "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+    <!-- Charts -->
+   
+
+</body>
+
+</html>
