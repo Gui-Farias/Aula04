@@ -42,5 +42,16 @@ def DashProf(request):
 
 
 
+def DashAtivi(request):
+    return render(request,'DashBoard/dashaluno/dashatividade.html')
+
+def dashfinanceiro(request):
+    return render(request,'DashBoard/dashaluno/dashfinanceiro.html')
+
+def dashcalenda(request):
+    return render(request,'DashBoard/dashaluno/dashcalenda.html')
+
+def dashouvi(request):
+    return render(request,'DashBoard/dashaluno/dashouvi.html')
 
     

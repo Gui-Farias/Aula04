@@ -24,6 +24,11 @@ urlpatterns = [
     path('login/dashboardProf/', DashProf),
 
 
+    path('login/dashatividade/', DashAtivi),
+    path('login/dashfinanceiro/', dashfinanceiro),    
+    path('login/dashboardAluno/dashcalenda/', dashcalenda),
+    path('login/dashouvi/', dashouvi),
+
 
     path('admin/', admin.site.urls),
 ]
