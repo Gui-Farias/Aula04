@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-############## PAGINAS DAS HOMES ##############
-
 def index(request):
     return render(request,'index.html')
 
@@ -17,9 +15,6 @@ def graduacao(request):
 
 def noticia(request):
     return render(request,'noticia.html')
-
-
-############## CURSOS ##############
 
 def ads(request):
     return render(request,'CursosEspecificados/ADS.html')
@@ -39,42 +34,24 @@ def BancoDeDados(request):
 def ProducaoMultimidia(request):
     return render(request,'CursosEspecificados/ProducaoMultimidia.html')
 
-############## AREA ALUNO ##############
-
 def DashAluno(request):
-    return render(request,'DashBoard/area_aluno/dashboardAluno.html')
-
-def calendario_aluno(request):
-    return render(request,'DashBoard/area_aluno/calendario_geral.html')
-
-def atividades_entregue_aluno(request):
-    return render(request,'DashBoard/area_aluno/atividades_entregue.html')
-
-def ouvidoria_aluno(request):
-    return render(request,'DashBoard/area_aluno/ouvidoria.html')
-
-def financeiro_aluno(request):
-    return render(request,'DashBoard/area_aluno/financeiro.html')
-
-def conta_aluno(request):
-    return render(request,'DashBoard/area_aluno/conta.html')
-
-############## AREA PROFESSOR ##############
+    return render(request,'DashBoard/dashboardAluno.html')
 
 def DashProf(request):
-    return render(request,'DashBoard/area_professor/dashboardProf.html')
+    return render(request,'DashBoard/dashboardProf.html')
 
-def calendario_prof(request):
-    return render(request,'DashBoard/area_professor/calendario_prof.html')
 
-def planejamento_aula(request):
-    return render(request,'DashBoard/area_professor/planejamento_aula.html')
 
-def ouvidoria_prof(request):
-    return render(request,'DashBoard/area_professor/ouvidoria_prof.html')
+def DashAtivi(request):
+    return render(request,'DashBoard/dashaluno/dashatividade.html')
 
-def corrigir_atividade_prof(request):
-    return render(request,'DashBoard/area_professor/corrigir_atividade_prof.html')
+def dashfinanceiro(request):
+    return render(request,'DashBoard/dashaluno/dashfinanceiro.html')
 
-def conta_prof(request):
-    return render(request,'DashBoard/area_professor/conta_prof.html')
+def dashcalenda(request):
+    return render(request,'DashBoard/dashaluno/dashcalenda.html')
+
+def dashouvi(request):
+    return render(request,'DashBoard/dashaluno/dashouvi.html')
+
+    
