@@ -29,6 +29,7 @@ urlpatterns = [
     path('login/dashboardAluno/dashcalenda/', dashcalenda),
     path('login/dashboardAluno/dashouvi/', dashouvi),
 
+    path('login/dashboardAluno/dashconta/', dashconta),
 
     path('admin/', admin.site.urls),
 ]

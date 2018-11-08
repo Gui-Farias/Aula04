@@ -54,4 +54,8 @@ def dashcalenda(request):
 def dashouvi(request):
     return render(request,'DashBoard/dashaluno/dashouvi.html')
 
+
+def dashconta(request):
+    return render(request,'DashBoard/dashaluno/dashconta.html')
+
     
