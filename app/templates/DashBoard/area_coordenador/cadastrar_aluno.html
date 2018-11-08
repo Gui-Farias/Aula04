@@ -1,0 +1,342 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="br">
+
+<head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>YoungUniversity</title>
+    <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'CSS/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'CSS/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'DashBoardCSS/area_coordenadorCSS/cadastroAluno.css' %}" rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="#">
+                    <strong class="blue-text">Young University</strong>
+                </a>
+
+                <!-- Botão Sair -->
+                <a class="btn ml-2 btn-warning" href="login">Sair</a></li>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+
+            <a class="logo-wrapper waves-effect">
+                <img src="{% static 'Imagens/logo/LogoYoung.png' %}" class="img-fluid" alt="Young">
+            </a>
+
+            <div class="list-group list-group-flush">
+                <a href="dashboard_coordenador" class="list-group-item list-group-item-action  waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
+                <a href="cadastrar_prof" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-book mr-3"></i>Cadastro Professor</a>
+                <a href="cadastrar_aluno" class="list-group-item list-group-item-action active  waves-effect">
+                    <i class="fa fa-book mr-3"></i>Cadastro de aluno</a>
+                <a href="Conta_Coordenador" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user mr-3"></i>Conta</a>
+                    
+                    
+            </div>
+
+        </div>
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+
+       <!--Main layout-->
+       <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+                <!--Card content-->
+                <div>
+
+                    <h1>
+                        <span>Cadastro de Aluno</span>
+                    </h1>
+
+
+                </div>
+
+            </div>
+
+            <!-- Heading -->
+            <div class="container">
+
+                <div class="row">
+                    <div class="cardPDF">
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-3">
+                        <form role="form">
+                            
+                            <hr class="colorgraph">
+                            <div class="form-group">
+                                <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Nome" tabindex="3">
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="time" name="abertura" id="abertura" class="form-control input-lg" tabindex="5">
+                                         <p class="help-block">Inicio da jornada</p>
+                                    </div>
+                                </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="time" name="fechamento" id="fechamento" class="form-control input-lg" tabindex="5">
+                                         <p class="help-block">Fim da jornada </p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div     class="row">
+                                
+                            </div><br>
+                            <hr class="colorgraph">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6"><input type="text" name="ID" id="ID" class="form-control input-lg"  placeholder="ID" tabindex="3"></div>
+                                </div><br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6"><input type="text" name="RA" id="RA" class="form-control input-lg" placeholder="RA" tabindex="3"></div>
+                                </div><br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6"><input type="text" name="Aulas\Cursos" id="Aulas\Cursos" class="form-control input-lg" placeholder="Aulas\Cursos" tabindex="3"></div>
+                                </div><br>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6"><input type="text" name="Periodo" id="Periodo" class="form-control input-lg" placeholder="Periodo" tabindex="3"></div>
+                                </div><br>
+                                
+                            <hr class="colorgraph">
+                            <div class="form-group">
+                                <div class="col-xs-12 col-md-6"><input type="submit" value="Cadastrar" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            <!-- Table with panel -->
+<div class="card card-cascade narrower">
+
+        <!--Card image-->
+        <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
+    
+            <div>
+                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+                    <i class="fa fa-th-large mt-0"></i>
+                </button>
+                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+                    <i class="fa fa-columns mt-0"></i>
+                </button>
+            </div>
+    
+            <a href="" class="white-text mx-3">Alunos</a>
+    
+            <div>
+                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+                    <i class="fa fa-pencil mt-0"></i>
+                </button>
+                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+                    <i class="fa fa-remove mt-0"></i>
+                </button>
+                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+                    <i class="fa fa-info-circle mt-0"></i>
+                </button>
+            </div>
+    
+        </div>
+        <!--/Card image-->
+    
+        <div class="px-4">
+    
+            <div class="table-wrapper">
+                <!--Table-->
+                <table class="table table-hover mb-0">
+    
+                    <!--Table head-->
+                    <thead>
+                        <tr>
+                            <th>
+                                <input class="form-check-input" type="checkbox" id="checkbox">
+                                <label class="form-check-label" for="checkbox" class="mr-2 label-table"></label>
+                            </th>
+                            <th class="th-lg">
+                                <a>Nome
+                                    <i class="fa fa-sort ml-1"></i>
+                                </a>
+                            </th>
+                            <th class="th-lg">
+                                <a href="">Sobrenome
+                                    <i class="fa fa-sort ml-1"></i>
+                                </a>
+                            </th>
+                            <th class="th-lg">
+                                <a href="">RA
+                                    <i class="fa fa-sort ml-1"></i>
+                                </a>
+                            </th>
+                            <th class="th-lg">
+                                <a href="">RP
+                                    <i class="fa fa-sort ml-1"></i>
+                                </a>
+                            </th>
+                            <th class="th-lg">
+                                <a href="">Aulas/Curso
+                                    <i class="fa fa-sort ml-1"></i>
+                                </a>
+                            </th>
+                            <th class="th-lg">
+                                <a href="">Periodo
+                                    <i class="fa fa-sort ml-1"></i>
+                                </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <!--Table head-->
+    
+                    <!--Table body-->
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkbox1">
+                                <label class="form-check-label" for="checkbox1" class="label-table"></label>
+                            </th>
+                            <td>David</td>
+                            <td>Rodrigues Melo</td>
+                            <td>@Davidr</td>
+                            <td>1899023</td>
+                            <td>LPI/ADS</td>
+                            <td>Diurno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2" class="label-table"></label>
+                            </th>
+                            <td>Alice</td>
+                            <td>Maia Santos</td>
+                            <td>@Alicesan123</td>
+                            <td>1822334</td>
+                            <td>DESIGNER/JGD</td>
+                            <td>Noturno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkbox3">
+                                <label class="form-check-label" for="checkbox3" class="label-table"></label>
+                            </th>
+                            <td>Carlos</td>
+                            <td>Tobias</td>
+                            <td>@Carlost</td>
+                            <td>1833445</td>
+                            <td>IOT\ADS</td>
+                            <td>Noturno
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkbox4">
+                                <label class="form-check-label" for="checkbox4" class="label-table"></label>
+                            </th>
+                            <td>Paulo</td>
+                            <td>Topolski</td>
+                            <td>@P-Topolski</td>
+                            <td>1833448</td>
+                            <td>LPII\ADS</td>
+                            <td>Diurno</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" id="checkbox5">
+                                <label class="form-check-label" for="checkbox5" class="label-table"></label>
+                            </th>
+                            <td>Larisa</td>
+                            <td>Manoela</td>
+                            <td>@larim</td>
+                            <td>1988282</td>
+                            <td>TECWEB\BD</td>
+                            <td>Diurno</td>
+                        </tr>
+                    </tbody>
+                    <!--Table body-->
+                </table>
+                <!--Table-->
+            </div>
+    
+        </div>
+    
+    </div>
+    <!-- Table with panel -->                
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Card-->
+                   
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+        <!--Copyright-->
+        <div class="card-body text-center">
+            <h4 class="text-white"><p>&copy; Copyright Young Developer 2018 </p> </h4>
+            <p class="h5 text-white"> for Ecommerce, marketplace, booking websites 
+            and product landing pages</p>   <br>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+    <!-- Initializations -->
+   
+
+</body>
+
+</html>
