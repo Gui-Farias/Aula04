@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Young University </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/index.css' %}" />
+    <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>      
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href=""> <img class="logo" src="{% static 'Imagens/logo/LogoYoung.png' %}"> </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar1">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="">Home</a>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="graduacao"> Graduação </a></li>
+            <li class="nav-item"><a class="nav-link" href="noticia"> Noticias </a></li>
+            <li class="nav-item"><a class="nav-link" href="contato"> Contato </a></li>
+            <li class="nav-item">
+                <a class="btn ml-2 btn-warning" href="login">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<header class="header" id="header4">
+    <div class="center">
+		<div class="caption">
+            <h2 class="title display-3">Vestibular 2019</h2>
+            
+			<p class="text">O sucesso pode ter várias formas, significados e efeitos. 
+                Na Universidade Young, você vai desconstruir velhos conceitos e aprender uma série de 
+                coisas sobre o mundo e sobre si mesmo. Venha construir o seu futuro!!. Agende já uma visita </p>
+		</div>	
+	</div>
+	<i class="scroll fa fa-angle-double-down"></i>
+</header>
+
+
+
+
+
+
+<!-- Parte Laranja-->
+
+
+<div class="header-content">
+    <div class="EfeitoDestaque">
+        <h2>Young University</h2>
+        <p>A Young University é uma das faculdades de tecnologia mais recomendada pelo o  MEC com nota 5, 
+           altamente requisitada pelas empresas.<br /> 
+           venha ter um emprego garantido se formando agora mesmo em nossa Universidade.</p>
+        <p>Veja logo abaixo depoimentos de ex alunos e em seguida alguns de nossos cursos.</p>
+    </div>
+</div>
+
+
+
+<!-- Fim parte Laranja-->
+
+<!-- Conteudo com as fotos-->
+
+<div class="container section">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>
+                Matheus - Full-Stack
+            </h3>
+            <p>
+                Terminei o ensino medio sem saber muito bem o que eu queria ser, até que eu passei em frente da 
+                Young University e peguei um folder, que falava sobre ela e seus cursos, 
+                de cara me interessei por <a href="ADS">Analise e de desenvolvimentos de sistemas</a>.<br />
+                Durante o curso me apaixonei cada vez mais pelo o desenvolvimento WEB e nessa hora 
+                que doscobri que essa seria minha profissão.<br />
+                Atualmente estou trabalhando como Full-Stack na Godo.au, uma das maiores empresas da Oceania.  
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="https://preview.ibb.co/erdq8p/Employee-1.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://preview.ibb.co/cu76g9/Employee-2.jpg" alt=""/>
+        </div>
+        <div class="col-md-6">
+            <h3>
+                Ronaldo - Gerente DBA
+            </h3>
+            <p>
+               Quando eu era criança eu ficava vendo meu trabalhar com banco de dados e eu achava algo muito legal, quando terminei o ensino medio o meu pai falou sobre a Young, ao pesquisar sobre ela vi que falam muito bem dela e que essa seria uma boa opção, então logo meu cadastrei em <a href="BancoDeDados">Banco de dados</a>. <br />Dei a sorte de conseguir um estagio logo no primeiro semestre em uma otima empresa e crescer dentro dela. Atualmente eu continuo trablahando nela, agora como Gernte DBA.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- .//container -->
+
+<!-- Cursos -->
+
+<div class="container">
+    <div class="row">
+        <!--team-1-->
+        <div class="col-lg-4">
+            <div class="our-team-main">
+                <a href="ADS"> <!-- LINK PARA A PAGÍNA DOS CURSOS -->
+                    <div class="team-front">
+                        <img src="{%  static 'Imagens/atencao_cursos/ADS.jpeg' %}" class="analise e desenvolvimento" />
+                        <h3>Analise e Desenvolvimento</h3>
+                        <p>Tecnologo</p>
+                    </div>
+
+                    <div class="team-back">
+                        <span>
+                            O curso é voltado para a criação de programas, softwares e sistemas para as empresas.
+                            As etapas do projeto de sistemas de software, como análise, projeto, teste, gestão,
+                            implantação e
+                            manutenção.
+                        </span>
+                    </div>
+            </div></a> <!-- LINK FECHA AQUI -->
+        </div>
+
+        <!--Fim 1° Curso-->
+
+        <!--2 Curso-->
+        <div class="col-lg-4">
+            <div class="our-team-main">
+                <a href="WebDesigner"> <!-- LINK PARA A PAGÍNA DOS CURSOS -->
+                    <div class="team-front">
+                        <img src="{% static 'Imagens/atencao_cursos/WD.jpg' %}" class="Web Designer" />
+                        <h3>Web Designer</h3>
+                        <p>Tecnologo</p>
+                    </div>
+
+                    <div class="team-back">
+                        <span>
+                            O curso de Web Design é uma extensão do Design e forma profissionais capacitados para o
+                            desenvolvimento, criação e manutenção da interface de sites, blogs e aplicativos.
+                        </span>
+                    </div>
+            </div></a> <!-- LINK FECHA AQUI -->
+        </div>
+        <!--team-2-->
+
+        <!--team-3-->
+        <div class="col-lg-4">
+            <div class="our-team-main">
+                <a href="BancoDeDados"><!-- LINK PARA A PAGÍNA DOS CURSOS -->    
+                <div class="team-front">
+                    <img src="{% static 'Imagens/atencao_cursos/BD.jpg' %}" class="Banco de dados" />
+                    <h3>Banco de Dados</h3>
+                    <p>Tecnologo</p>
+                </div>
+
+                <div class="team-back">
+                    <span>
+                        O curso de Banco de Dados é oferecido como tecnológico, além de projetar,
+                        implementar e gerenciar sistemas de banco de dados, o profissional desenvolve
+                        métodos para o uso de informações no apoio à tomada de decisões gerenciais.
+                    </span>
+                </div>
+            </div></a><!-- LINK FECHA AQUI -->
+        </div>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+<footer>
+    <div class="card-body text-center">
+     <h4 class="text-white"><p>&copy; Copyright Young Developer 2018 </p> </h4>
+     <p class="h5 text-white"> for Ecommerce, marketplace, booking websites 
+     and product landing pages</p>   <br>
+   </div>
+  <br><br>
+  </footer>
+</body>
+</html>

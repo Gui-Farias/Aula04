@@ -1,0 +1,297 @@
+body{
+    width:100%;
+    background:
+    linear-gradient(
+      rgba(53, 92, 125, 0.8), /* #355c7d */
+      rgba(108, 91, 123, 0.8), /* #6c5b7b */
+      rgba(192, 108, 123, 0.8) /* #c06c7b */
+    ),
+    url('../Imagens/pexels-photo-237898.jpeg') no-repeat left top;
+   background-size: cover;  
+	z-index: 0; /* bottom layout */
+}
+
+/* ############# FIM BACKGROUND ##################*/
+
+
+/*############### CONFIGURAÇÕES DO HEADER (IMAGEM E TEXTO) ##############*/
+
+.header {
+    position: relative;	
+    height: 525px;	
+  }
+  .header .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      transform:translate(-50%,-50%);
+      z-index: 5; 
+    padding: 1rem;
+  }
+  .header .left {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      transform:translate(-50%,-50%);
+      z-index: 5; 
+    padding: 1rem;
+  }
+  .header .right {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      transform:translate(-50%,-50%);
+      z-index: 5; 
+    padding: 1rem;
+  }
+  .header .scroll {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    color: #fff;
+    font-size: 1.5rem;
+  }
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+    .header .center {
+      width: 100%;
+    }
+    .header .left {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      width: 40%;
+      height: 60%;
+      transform:translate(0, 0);
+      padding: 1rem;
+    }
+    .header .right {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      width: 40%;
+      height: 60%;
+      transform:translate(0, 0);
+      padding: 1rem;
+    }
+}
+
+/* =======================================
+ header#4
+========================================*/
+#header4 {
+  background: #355c7d;  
+  background:
+    linear-gradient(
+      rgba(53, 92, 125, 0.8), /* #355c7d */
+      rgba(108, 91, 123, 0.8), /* #6c5b7b */
+      rgba(192, 108, 123, 0.8) /* #c06c7b */
+    ),
+    url('https://cdn.stocksnap.io/img-thumbs/960w/LPPN6E2YK4.jpg') no-repeat left top;
+   background-size: cover;  
+	z-index: 0; /* bottom layout */
+}
+#header4 .caption {
+  
+  z-index: 5; 
+  text-align: center;
+  color: #fff;
+}
+#header4 .caption .title {
+	margin-bottom: 1.5rem;
+}
+#header4 .caption .text {
+	margin-bottom: 1.5rem;
+}
+#header4 .caption .action {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  width: 70%;
+}
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+#header4 .caption .action {
+  margin-left: 10%;
+  width: 80%;
+}
+}
+
+
+/*############### FIM DAS CONFIGURAÇÕES DO HEADER ##############*/
+
+
+
+
+
+
+
+/* #################### CONFIGURAÇÕES DA PARTE AZUL ######## */
+
+.header-content{
+    background: linear-gradient(
+      rgba(34, 67, 97, 0.8), /* #355c7d */
+      rgba(108, 91, 123, 0.8), /* #6c5b7b */
+      rgba(192, 108, 123, 0.8) /* #c06c7b */
+    );
+    color: #fff;
+    height: 250px;
+    padding-top: 130px;
+    position: relative;
+    text-align: center;
+    width: 100%;    
+
+}
+
+.header-content h2{
+    margin-top:2%;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.header-content p{
+    padding: 0px 150px;
+}
+
+.header-content:before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 125px;
+    top: -50px;
+    left: 0;
+    background:#6860f4;
+    transform: skewY(10deg);
+}
+
+.header-content:after{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 125px;
+    top: -50px;
+    right: 0;
+    background:#6860f4;
+    transform: skewY(-10deg);
+}
+
+/* ######################### FIM DAS CONFIGURAÇÕES DA PARTE LARANJA */
+
+
+
+
+
+/* ########### CONFIGURAÇÕES DAS DIVS E TEXTOS ######*/
+
+
+h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+h1 { font-size: 34px; }
+h2 { font-size: 28px; line-height: 38px; }
+h3 { font-size: 22px; line-height: 32px; }
+h4 { font-size: 20px; }
+h5 { font-size: 17px; }
+h6 { font-size: 12px; }
+p { margin: 0 0 20px; line-height: 1.7; }
+p:last-child { margin: 0px; }
+.link { color: #212529 !important; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+
+
+
+
+.card-section { position: relative; bottom: 60px; }
+.card-block { padding: 80px; }
+.section-title { margin-bottom: 60px; }
+
+/* ########### FIM DAS CONFIGURAÇÕES DA DIVS E TEXTOS ######*/
+
+
+/* ########## COMEÇO DA LISTA DE CURSOS ############# */
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:rgba(218, 206, 206, 0.829);
+	
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background: linear-gradient(
+    rgba(53, 92, 125, 0.8), /* #355c7d */
+    rgba(108, 91, 123, 0.8), /* #6c5b7b */
+    rgba(192, 108, 123, 0.8) /* #c06c7b */
+  ),
+  url('../Imagens/pexels-photo-237898.jpeg') no-repeat left top;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+/*our-team-main*/
+/* ############### FIM LISTA DE CURSOS ##################### */
+
+
+
+
+
+
+/* TESTTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+
