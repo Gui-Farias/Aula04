@@ -1,0 +1,780 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>YoungUniversity</title>
+    <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'DashBoardCSS/area_alunoCSS/atividades_entregue.css' %}" rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="#">
+                    <strong class="blue-text">Young University</strong>
+                </a>
+
+                <!-- Botão Sair -->
+                <a class="btn ml-2 btn-warning" href="login">Sair</a></li>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+
+            <a class="logo-wrapper waves-effect">
+                <img src="{% static 'Imagens/logo/LogoYoung.png' %}" class="img-fluid" alt="Young">
+            </a>
+
+            <div class="list-group list-group-flush">
+                <a href="dashboardAluno" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
+                <a href="calendario_geral" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-table mr-3"></i>Calendario </a>
+                <a href="atividades_entregue" class="list-group-item list-group-item-action active waves-effect">
+                    <i class="fas fa-clipboard-check atividades_entregues icone"></i>Atividades </a>
+                <a href="ouvidoria_aluno" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-assistive-listening-systems icone"></i>Ouvidoria</a>
+                <a href="financeiro" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fab fa-bitcoin icone"></i>Financeiro</a>
+                <a href="conta_aluno" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user mr-3"></i>Contato</a>
+            </div>
+
+        </div>
+
+
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+                <!--Card content-->
+                <div>
+
+                    <h1>
+                        Suas Atividades
+                    </h1>
+
+
+                </div>
+
+            </div>
+            <!-- Heading -->
+
+            <div class="container">
+                <div class="row">
+                    <!--1º curso-->
+                    <div class="col-lg-4">
+                        <div class="our-team-main">
+
+                            <!-- ############ INICIO MODAL PRIMERA TURMA-MANHA ###########3-->
+                            <div id="myModalSala1" class="modal fade in">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <a class="btn btn-default" data-dismiss="modal">Sair<span class="glyphicon glyphicon-remove"></span></a>
+                                            <h4 class="modal-title">Sala 205B Manhã</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-striped custab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>AC</th>
+                                                        <th>Titulo</th>
+                                                        <th>Data inicio</th>
+                                                        <th>Data FIm</th>
+                                                        <th class="text-center">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Construção da Pagina Inicial <br><br> <img src="http://portal.ifba.edu.br/dgcom/imagens/pdficon.png/@@images/72cd2884-3738-42e4-9066-256dc303c734.png"
+                                                            class="img"></td>
+                                                    <td>25/10</td>
+                                                    <td>30/10</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span> Com nota: 8/10</a>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Criação das dashboards</td>
+                                                    <td>02/11</td>
+                                                    <td>21/11</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span> Enviar</a>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Implatação do back-End</td>
+                                                    <td>21/11</td>
+                                                    <td>10/12</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span> Enviar</a>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
+                                                    Cancel</button>
+                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-check"></span>
+                                                    Save</button>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dalog -->
+                            </div><!-- /.modal -->
+
+                            <a data-toggle="modal" href="#myModalSala1" class="link">
+
+                                <!--############# FIM MODAL DA PRIMEIRA TURMA-MANHÃ ########  -->
+
+
+                                <!--####### CONFIGURAÇÕES DA SALA -->
+                                <div class="team-front">
+                                    <img src="http://placehold.it/110x110/9c27b0/fff?text=GDP" class="img-fluid" />
+                                    <h3>Sala 205B Manhã</h3>
+                                    <p>
+                                        <'Nome do professor'>
+                                    </p>
+                                </div>
+
+                                <div class="team-back">
+                                    <span>
+                                        Deixe uma anotação sobre essa matéria.
+                                    </span>
+                                </div>
+                        </div> </a> <!-- Link Fecha Aqui-->
+                    </div>
+
+                    <!--Fim 1° Curso-->
+
+                    <!--2 Curso-->
+                    <div class="col-lg-4">
+                        <div class="our-team-main">
+
+                            <!-- ############ INICIO MODAL SEGUNDA TURMA-MANHÃ ###########3-->
+                            <div id="myModalSala2" class="modal fade in">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <a class="btn btn-default" data-dismiss="modal">Sair<span class="glyphicon glyphicon-remove"></span></a>
+                                            <h4 class="modal-title">Sala 103A Manhã</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-striped custab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>AC</th>
+                                                        <th>Titulo</th>
+                                                        <th>Data inicio</th>
+                                                        <th>Data FIm</th>
+                                                        <th class="text-center">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Construção da Pagina Inicial</td>
+                                                    <td>25/10</td>
+                                                    <td>30/10</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Com Nota: 10/10</a>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Criação das dashboards <br><br> <img src="http://www.faespe.com.br/wp-content/uploads/2015/07/doc.jpg"
+                                                            class="img"></td>
+                                                    <td>02/11</td>
+                                                    <td>21/11</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Com Nota: 7/10</a>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Implatação do back-End</td>
+                                                    <td>21/11</td>
+                                                    <td>10/12</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span> Enviar</a>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
+                                                    Cancel</button>
+                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-check"></span>
+                                                    Save</button>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dalog -->
+                            </div><!-- /.modal -->
+
+                            <a data-toggle="modal" href="#myModalSala2" class="link">
+                                <!--############# FIM MODAL DA SEGUNDA TURMA-MANHÃ ########  -->
+
+                                <!--####### CONFIGURAÇÕES DA SALA -->
+                                <div class="team-front">
+                                    <img src="http://placehold.it/110x110/336699/fff?text=LP" class="img-fluid" />
+                                    <h3>Sala 103A Manhã</h3>
+                                    <p>
+                                        <'Nome do professor'>
+                                    </p>
+                                </div>
+
+                                <div class="team-back">
+                                    <span>
+                                        Deixe uma anotação sobre essa matéria.
+                                    </span>
+                                </div>
+                            </a> <!-- Link Fecha Aqui-->
+                        </div>
+                    </div>
+
+                    <!-- ############ FIM CONFIGURAÇÕES DA SALA ###########-->
+                    <!--team-2-->
+
+                    <!-- 3 curso-->
+                    <div class="col-lg-4">
+                        <div class="our-team-main">
+
+                            <!-- ############ INICIO MODAL TERCEIRA TURMA-MANHÃ ###########3-->
+                            <div id="myModalSala3" class="modal fade in">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <a class="btn btn-default" data-dismiss="modal">Sair<span class="glyphicon glyphicon-remove"></span></a>
+                                            <h4 class="modal-title">Sala 202C Manhã</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-striped custab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>AC</th>
+                                                        <th>Titulo</th>
+                                                        <th>Data inicio</th>
+                                                        <th>Data FIm</th>
+                                                        <th class="text-center">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Construção da Pagina Inicial</td>
+                                                    <td>25/10</td>
+                                                    <td>30/10</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Com Nota: 10/10</a>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Criação das dashboards</td>
+                                                    <td>02/11</td>
+                                                    <td>21/11</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Com Nota: 10/10</a>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Implatação do back-End <br><br> <img src="http://www.faespe.com.br/wp-content/uploads/2015/07/doc.jpg"
+                                                            class="img"></td>
+                                                    <td>21/11</td>
+                                                    <td>10/12</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Enviado</a>
+                                                </tr>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
+                                                    Cancel</button>
+                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-check"></span>
+                                                    Save</button>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dalog -->
+                            </div><!-- /.modal -->
+
+                            <a data-toggle="modal" href="#myModalSala3" class="link">
+                                <!--############# FIM MODAL DA TERCEIRA TURMA-MANHÃ ########  -->
+
+                                <!--####### CONFIGURAÇÕES DA SALA -->
+                                <div class="team-front">
+                                    <img src="http://placehold.it/110x110/607d8b/fff?text=BD" class="img-fluid" />
+                                    <h3>Sala 202C Manhã</h3>
+                                    <p>
+                                        <'Nome do professor'>
+                                    </p>
+                                </div>
+
+                                <div class="team-back">
+                                    <span>
+                                        Deixe uma anotação sobre essa matéria.
+                                    </span>
+                                </div>
+                            </a> <!-- Link Fecha Aqui-->
+                        </div>
+                    </div>
+                    <!--Fim 3º-->
+
+                    <!--Curso 4-->
+                    <div class="col-lg-4">
+                        <div class="our-team-main">
+
+                            <!-- ############ INICIO MODAL QUARTA TURMA-MANHÃ ###########3-->
+                            <div id="myModalSala4" class="modal fade in">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <a class="btn btn-default" data-dismiss="modal">Sair<span class="glyphicon glyphicon-remove"></span></a>
+                                            <h4 class="modal-title">Sala 200D Manhã</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-striped custab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>AC</th>
+                                                        <th>Titulo</th>
+                                                        <th>Data inicio</th>
+                                                        <th>Data FIm</th>
+                                                        <th class="text-center">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Construção da Pagina Inicial</td>
+                                                    <td>25/10</td>
+                                                    <td>30/10</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Enviado</a>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Criação das dashboards</td>
+                                                    <td>02/11</td>
+                                                    <td>21/11</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Enviado</a>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Implatação do back-End</td>
+                                                    <td>21/11</td>
+                                                    <td>10/12</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Enviado</a>
+                                                </tr>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
+                                                    Cancel</button>
+                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-check"></span>
+                                                    Save</button>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dalog -->
+                            </div><!-- /.modal -->
+
+                            <a data-toggle="modal" href="#myModalSala4" class="link">
+                                <!--############# FIM MODAL DA QUARTA TURMA-MANHÃ ########  -->
+
+                                <!--####### CONFIGURAÇÕES DA SALA -->
+                                <div class="team-front">
+                                    <img src="http://placehold.it/110x110/607d8b/fff?text=DEVOPS" class="img-fluid" />
+                                    <h3>Sala 200D Manhã</h3>
+                                    <p>
+                                        <'Nome do professor'>
+                                    </p>
+                                </div>
+
+                                <div class="team-back">
+                                    <span>
+                                        <span>
+                                            Deixe uma anotação sobre essa matéria.
+                                        </span>
+                                    </span>
+                                </div>
+                            </a> <!-- Link Fecha Aqui-->
+                        </div>
+                    </div>
+                    <!--Fim 4 curso-->
+
+                    <!--Curso 5-->
+                    <div class="col-lg-4">
+                        <div class="our-team-main">
+
+
+                            <!-- ############ INICIO MODAL QUINTA TURMA-MANHÃ ###########3-->
+                            <div id="myModalSala5" class="modal fade in">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <a class="btn btn-default" data-dismiss="modal">Sair<span class="glyphicon glyphicon-remove"></span></a>
+                                            <h4 class="modal-title">Sala 122A Manhã</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-striped custab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>AC</th>
+                                                        <th>Titulo</th>
+                                                        <th>Data inicio</th>
+                                                        <th>Data FIm</th>
+                                                        <th class="text-center">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Construção da Pagina Inicial</td>
+                                                    <td>25/10</td>
+                                                    <td>30/10</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Enviado</a>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Criação das dashboards</td>
+                                                    <td>02/11</td>
+                                                    <td>21/11</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Enviado</a>
+                                                </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Implatação do back-End</td>
+                                                    <td>21/11</td>
+                                                    <td>10/12</td>
+                                                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span
+                                                                class="glyphicon glyphicon-edit"></span>Enviado</a>
+                                                </tr>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
+                                                    Cancel</button>
+                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-check"></span>
+                                                    Save</button>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dalog -->
+                            </div><!-- /.modal -->
+
+                            <a data-toggle="modal" href="#myModalSala5" class="link">
+                                <!--############# FIM MODAL DA QUINTA TURMA-MANHÃ ########  -->
+
+                                <!--####### CONFIGURAÇÕES DA SALA -->
+                                <div class="team-front">
+                                    <img src="http://placehold.it/110x110/607d8b/fff?text=WEB" class="img-fluid" />
+                                    <h3>Sala 122A Manhã</h3>
+                                    <p>
+                                        <'Nome do professor'>
+                                    </p>
+                                </div>
+
+                                <div class="team-back">
+                                    <span>
+                                        Deixe uma anotação sobre essa matéria.
+                                    </span>
+                                </div>
+                            </a> <!-- Link Fecha Aqui-->
+                        </div>
+                    </div>
+                    <!--Fim curso 5-->
+
+                    <!--Curso 6-->
+                    <div class="col-lg-4">
+                        <div class="our-team-main">
+
+                            <!-- ############ INICIO MODAL SEXTA TURMA-MANHÃ ###########3-->
+                            <div id="myModalSala6" class="modal fade in">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <a class="btn btn-default" data-dismiss="modal">Sair<span class="glyphicon glyphicon-remove"></span></a>
+                                            <h4 class="modal-title">EAD</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-striped custab">
+                                                <!-- <thead>
+                                                                <tr>
+                                                                    <th>AC</th>
+                                                                    <th>Titulo</th>
+                                                                    <th>Data inicio</th>
+                                                                    <th>Data FIm</th>
+                                                                    <th class="text-center">Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>Construção da Pagina Inicial</td>
+                                                                        <td>25/10</td>
+                                                                        <td>30/10</td>
+                                                                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>Criação das dashboards</td>
+                                                                        <td>02/11</td>
+                                                                        <td>21/11</td>
+                                                                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3</td>
+                                                                        <td>Implatação do back-End</td>
+                                                                        <td>21/11</td>
+                                                                        <td>10/12</td>
+                                                                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                                                                    </tr>
+                                                                -->
+                                            </table>
+                                        </div>
+
+
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dalog -->
+                            </div><!-- /.modal -->
+
+                            <a data-toggle="modal" href="#myModalSala6" class="link">
+                                <!--############# FIM MODAL DA SEXTA TURMA-MANHÃ ########  -->
+
+                                <!--####### CONFIGURAÇÕES DA SALA -->
+                                <div class="team-front">
+                                    <img src="http://placehold.it/110x110/687d8b/fff?text=EAD" class="img-fluid" />
+                                    <h3>A distância</h3>
+                                    <p>'< Nome do professor'>
+                                    </p>
+                                </div>
+
+                                <div class="team-back">
+                                    <span>
+                                        Procure a coordenação para a se cadastrar no portal do EAD
+
+                                    </span>
+                                </div>
+                            </a> <!-- Link Fecha Aqui-->
+                        </div>
+                    </div>
+                </div>
+                <!--Fim curso 8-->
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!-- Card de notas -->
+        <div class="card mb-4 wow fadeIn">
+
+            <!--Card content-->
+            <div class="cardAulas">
+
+                <h1>
+                    Suas Notas Gerais
+                </h1>
+
+
+                <div class="table-responsive table-bordered movie-table">
+                    <table class="table movie-table">
+                        <thead>
+                            <tr class="movie-table-head">
+                                <th>Disciplina</th>
+                                <th>Turma</th>
+                                <th>tipo</th>
+                                <th>CH</th>
+                                <th>Nota Geral AC</th>
+                                <th>Prova</th>
+                                <th>Total de Faltas</th>
+                                <th>Situação</th>
+
+                            </tr>
+                        </thead>
+                        <tbody> 
+
+                            <!--row-->
+                            <tr class="dark-row">
+                                <td>Gestão de Projetos</td>
+                                <td>ADS 2E NOITE</td>
+                                <td>Regular</td>
+                                <td>80</td>
+                                <td> <span style="color:green;">5</span> /10 </td>
+                                <td> <span style="color:green;">5</span> /10 </td>
+                                <td>40</td>
+                                <td>Indefinido</td>
+                            </tr>
+                            <!--/.row-->
+
+                            <!--row-->
+                            <tr class="light-row">
+                                <td>Linguagem de programação</td>
+                                <td>ADS 2E NOITE</td>
+                                <td>Regular</td>
+                                <td>80</td>
+                                <td> <span style="color:green;">5</span> /10 </td>
+                                <td> <span style="color:green;">5</span> /10 </td>
+                                <td>37</td>
+                                <td>Indefinido</td>
+                            </tr>
+                            <!--/.row-->
+
+                            <!--row-->
+                            <tr class="dark-row">
+                                <td>Banco de Dados</td>
+                                <td>ADS 2E NOITE</td>
+                                <td>Regular</td>
+                                <td>80</td>
+                                <td> <span style="color:red;">1</span> /10 </td>
+                                <td> <span style="color:green;">5</span> /10 </td>
+                                <td>20</td>
+                                <td>Indefinido</td>
+                            </tr>
+                            <!--/.row-->
+
+                            <!--row-->
+                            <tr class="light-row">
+                                <td>Ambiente e Desenvolvimento</td>
+                                <td>ADS 2E NOITE</td>
+                                <td>Regular</td>
+                                <td>80</td>
+                                <td> <span style="color:orange;">3</span> /10 </td>
+                                <td> <span style="color:green;">5</span> /10 </td>
+                                <td>33</td>
+                                <td>Indefinido</td>
+                            </tr>
+                            <!--/.row-->
+
+                            <!--row-->
+                            <tr class="dark-row">
+                                <td>Programação Web</td>
+                                <td>ADS 2E NOITE</td>
+                                <td>Regular</td>
+                                <td>80</td>
+                                <td> <span style="color:orange;">3</span> /10 </td>
+                                <td> <span style="color:green;">5</span> /10 </td>
+                                <td>33</td>
+                                <td>Indefinido</td>
+                            </tr>
+                            <!--/.row-->
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <!-- Fim Card Notas -->
+
+
+
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+        <!--Copyright-->
+        <div class="card-body text-center">
+            <h4 class="text-white">
+                <p>&copy; Copyright Young Developer 2018 </p>
+            </h4>
+            <p class="h5 text-white"> for Ecommerce, marketplace, booking websites
+                and product landing pages</p> <br>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{% static 'JS/jquery-3.3.1.min.js' %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'JS/popper.min.js' %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'JS/bootstrap.min.js' %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'JS/mdb.min.js' %}"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>
