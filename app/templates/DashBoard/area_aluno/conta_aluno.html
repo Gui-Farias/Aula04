@@ -1,0 +1,239 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>YoungUniversity</title>
+    <link rel="shortcut icon" href="{% static 'Imagens/logo/LogoYoung.png' %}" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'DashBoardCSS/area_alunoCSS/conta.css' %}" rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="#">
+                    <strong class="blue-text">Young University</strong>
+                </a>
+
+                <!-- Botão Sair -->
+                <a class="btn ml-2 btn-warning" href="login">Sair</a></li>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+
+            <a class="logo-wrapper waves-effect">
+                <img src="{% static 'Imagens/logo/LogoYoung.png' %}" class="img-fluid" alt="Young">
+            </a>
+
+            <div class="list-group list-group-flush">
+                <a href="dashboardAluno" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Inicio</a>
+                <a href="calendario_geral" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-table mr-3"></i>Calendario </a>
+                <a href="atividades_entregue" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-clipboard-check atividades_entregues icone"></i>Atividades</a>
+                <a href="ouvidoria_aluno" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-assistive-listening-systems icone"></i>Ouvidoria</a>
+                <a href="financeiro" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fab fa-bitcoin icone"></i>Financeiro</a>
+                <a href="conta_aluno" class="list-group-item list-group-item-action active waves-effect">
+                    <i class="fa fa-user mr-3"></i>Contato</a>
+            </div>
+
+        </div>
+
+
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+                <!--Card content-->
+                <div>
+
+                    <h1>
+                        Contatos
+                    </h1>
+
+
+                </div>
+
+            </div>
+            <!-- Heading -->
+
+            <div class="col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="cardAulas">
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!-- Table  -->
+                        <table class="table table-hover">
+                            <!-- Table head -->
+                            <thead class="blue-grey lighten-4">
+                                <h1> Coordenadores</h1>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Cursos</th>
+                                    <th>Contatos</th>
+                                    <th>Coordenadores</th>
+                                </tr>
+                            </thead>
+                            <!-- Table head -->
+
+                            <!-- Table body -->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>ADS</td>
+                                    <td>Carloslima@gmail.com</td>
+                                    <td>Carlos lima</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>ADM</td>
+                                    <td>AndreiaSantos@gmail.com</td>
+                                    <td>Andreia Santos</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>SI</td>
+                                    <td>Claricemel@gmail.com</td>
+                                    <td>Clarice mel</td>
+                                </tr>
+                            </tbody>
+                            <!-- Table body -->
+                        </table>
+                        <!-- Table  -->
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="cardAulas">
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!-- Table  -->
+                        <table class="table table-hover">
+                            <!-- Table head -->
+                            <thead class="blue-grey lighten-4">
+                                <h1>Professores</h1>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Matéria</th>
+                                    <th>Contatos</th>
+                                    <th>Professor</th>
+                                </tr>
+                            </thead>
+                            <!-- Table head -->
+
+                            <!-- Table body -->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Gestão de Projetos </td>
+                                    <td>Antonieta@gmail.com</td>
+                                    <td>Antonieta </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Linguagem de programação </td>
+                                    <td>Anderson@gmail.com</td>
+                                    <td>Anderson</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Banco de Dados </td>
+                                    <td>Josue@gmail.com</td>
+                                    <td>Josue</td>
+                                </tr>
+                            </tbody>
+                            <!-- Table body -->
+                        </table>
+                        <!-- Table  -->
+
+                    </div>
+
+                </div>
+            </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+        <!--Copyright-->
+        <div class="card-body text-center">
+            <h4 class="text-white">
+                <p>&copy; Copyright Young Developer 2018 </p>
+            </h4>
+            <p class="h5 text-white"> for Ecommerce, marketplace, booking websites
+                and product landing pages</p> <br>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{% static 'JS/jquery-3.3.1.min.js' %}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'JS/popper.min.js' %}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'JS/bootstrap.min.js' %}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'JS/mdb.min.js' %}"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>
